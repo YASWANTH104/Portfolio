@@ -4,12 +4,12 @@
   # If your 'package.json' and source code for the actual site are inside a
   # subdirectory called 'Portofolio_V5' within your repository, then keep this.
   # Otherwise, if 'Portofolio_V5' is your repository root, remove this line.
-  base = "Portofolio_V5"
+  #base = "Portofolio_V5"
 
   # This is the command Netlify will run to build your site.
   # Ensure that 'npm run build' is defined in your package.json scripts
   # and that it successfully generates your production-ready files.
-  command = "npm run build"
+  command = "npm install --legacy-peer-deps && npm run build""
 
   # This is the directory that Netlify will deploy.
   # CHANGE 'build' to 'dist' if your build process outputs to a 'dist' folder.
