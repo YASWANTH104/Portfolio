@@ -1,0 +1,21 @@
+# netlify.toml
+[build]
+  # 'base' specifies the directory where your build command should be run from.
+  # If your 'package.json' and source code for the actual site are inside a
+  # subdirectory called 'Portofolio_V5' within your repository, then keep this.
+  # Otherwise, if 'Portofolio_V5' is your repository root, remove this line.
+  base = "Portofolio_V5"
+
+  # This is the command Netlify will run to build your site.
+  # Ensure that 'npm run build' is defined in your package.json scripts
+  # and that it successfully generates your production-ready files.
+  command = "npm run build"
+
+  # This is the directory that Netlify will deploy.
+  # CHANGE 'build' to 'dist' if your build process outputs to a 'dist' folder.
+  publish = "dist" # Changed from 'build' to 'dist'
+
+# Optional: Set Node.js and NPM flags for consistency
+[build.environment]
+  NODE_VERSION = "18" # Or your desired Node.js version (e.g., "20", "16")
+  NPM_FLAGS = "--legacy-peer-deps" # Only if you encounter peer dependency issues
