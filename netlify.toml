@@ -9,7 +9,7 @@
   # This is the command Netlify will run to build your site.
   # Ensure that 'npm run build' is defined in your package.json scripts
   # and that it successfully generates your production-ready files.
-  command = "npm install --legacy-peer-deps && npm run build""
+  command = "npm install --legacy-peer-deps && npm run build"
 
   # This is the directory that Netlify will deploy.
   # CHANGE 'build' to 'dist' if your build process outputs to a 'dist' folder.
