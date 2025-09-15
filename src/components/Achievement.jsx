@@ -11,7 +11,7 @@ const achievements = [
             "Reached the national semifinals in Flipkart’s engineering competition.",
         date: "March 2025",
         color: "from-[#a855f7] to-[#6366f1]",
-        link: "https://www.linkedin.com/posts/shaik-mahammad-jani_hackathonwinner-cynosure-svu-activity-7312865531227725824-sMv4?utm_source=share&utm_medium=member_desktop&rcm=ACoAADs67C8Bww3SPZQuiHuGfrL3MO3nqoQ0iZg",
+        link: "https://res.cloudinary.com/dpxtbouej/image/upload/v1757248085/Screenshot_2025-09-07_at_5.54.37_PM_xz6f01.png",
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const achievements = [
             "Secured Rank 87 in the Bi-Weekly Contest held by NxtWave.",
         date: "Feb 2025",
         color: "from-[#6366f1] to-[#a855f7]",
-        link: "https://www.linkedin.com/posts/shaik-mahammad-jani_hackathonwinner-webdevelopment-eventmanagement-activity-7304159314259173377-z7l9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADs67C8Bww3SPZQuiHuGfrL3MO3nqoQ0iZg",
+        link: "https://www.linkedin.com/posts/yaswanth-sai-gonuguntla_activity-7298712367024984064-M81d?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBfmNUBWnPnLz53uclB-_-uqq2PsGr8NPE",
     },
     // Add more achievements as needed
 ];

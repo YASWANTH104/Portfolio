@@ -115,6 +115,8 @@ const techStacks = [
   { icon: "FastAPI.png", language: "FastAPI" },
 
   { icon: "mongodb.png", language: "MongoDB" },
+  { icon: "sqlite3.jpeg", language: "SQLite" },
+  { icon: "mysql.webp", language: "MySQL" },
   { icon: "nodejs.svg", language: "Node JS" },
   { icon: "expresssjs.png", language: "ExpressJs" },
 
@@ -123,7 +125,7 @@ const techStacks = [
   { icon: "bootstrap.svg", language: "Bootstrap" },
   { icon: "tailwind.svg", language: "Tailwind CSS" },
   { icon: "Shadcn.png", language: "Shadcn UI" },
-  { icon: "MUI.svg", language: "Material UI" },
+  // { icon: "MUI.svg", language: "Material UI" },
   { icon: "vercel.svg", language: "Vercel" },
 ];
 
@@ -274,6 +276,33 @@ export default function FullWidthTabs() {
           Description:
             "Nxtwatch is a React JS-based YouTube clone that allows users to browse, search, and watch videos in a responsive and user-friendly interface. It features JWT-based authentication, protected routes, dynamic video fetching, and dark/light theme toggle. The app also includes a responsive sidebar for easy navigation and error handling with retry for network failures.",
           Github: "https://github.com/YASWANTH104/Nxtwatch",
+        },
+        {
+          id: "Jobby App",
+          Link: "https://jobby-application-alpha.vercel.app/login",
+          Features: [
+            "Users must log in (username & password), and a JWT is issued and stored (e.g. in local storage) to access protected areas.",
+            "Certain pages (Home, Jobs list, Job details) are inaccessible unless authenticated; non-authenticated users are redirected to Login.",
+            "Users can search jobs by title and apply filters like salary range and employment type (via query parameters) to narrow down results.",
+            "Smooth navigation between different screens/pages: Login, Home, Jobs listing, and Job details.",
+            "Each job has a detailed view (job item details) that shows more information when clicked.",
+            "Optimized UI for desktop and mobile, ensuring accessibility across devices.",
+          ],
+          Title: "Jobby App",
+          TechStack: [
+            "ReactJS",
+            "Botstrap",
+            "CSS",
+            "Stlyed Components",
+            "JWT",
+            "Node.js",
+            "Express.js",
+            "MongoDb",
+          ],
+          Img: "/jobby.png",
+          Description:
+            "Jobby App is a React-based job portal that enables users to securely log in, explore job listings, filter opportunities, and view detailed job descriptions with a smooth, responsive UI.",
+          Github: "https://github.com/YASWANTH104/Jobby-Application",
         },
         {
           id: "Emoji Game",
