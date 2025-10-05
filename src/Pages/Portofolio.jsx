@@ -166,12 +166,39 @@ export default function FullWidthTabs() {
 
       const projectData = [
         {
+          id: "StrataDB",
+          Img: "/stratadb.png",
+          Link: "https://github.com/YASWANTH104/StrataDB",
+          Github: "https://github.com/YASWANTH104/StrataDB",
+          Description:
+            "StrataDB is a high-performance, file-based key-value datastore engine built in Python, designed with database internals like LSM Trees, SSTables, Bloom Filters, and Write-Ahead Logs. It efficiently manages data persistence and provides fast CRUD operations with strong fault tolerance and recovery capabilities.",
+          Features: [
+            "Developed a lightweight key-value datastore supporting efficient CRUD operations using Python.",
+            "Implemented LSM Trees, SSTables, and Bloom Filters for optimized writes and rapid data lookups.",
+            "Integrated Write-Ahead Logging (WAL) for crash recovery and data durability under high-throughput conditions.",
+            "Designed MemTable flushing and SSTable compaction mechanisms for maintaining storage efficiency and consistency.",
+            "Benchmarked over 20K+ insertions achieving millisecond-level write latency, outperforming SQLite in write performance.",
+            "Modular architecture enabling extensibility for advanced indexing, caching, and replication mechanisms.",
+          ],
+
+          Title: "StrataDB",
+          TechStack: [
+            "Python",
+            "LSM Tree",
+            "SSTable",
+            "Bloom Filters",
+            "Write-Ahead Log (WAL)",
+            "Data Structures",
+            "File I/O",
+          ],
+        },
+        {
           id: "Yash AI-Career Coach",
           Img: "/carrerCoach.png",
           Link: "https://virtualassistant-4h9u.onrender.com/",
           Github: "https://github.com/YASWANTH104/Yash-AI",
           Description:
-            "Yash-AI is a full-stack AI-powered career coaching platform built with Next.js, Prisma, Neon DB, Tailwind CSS, and Clerk authentication. It helps users explore industry insights, track career growth, and get AI-generated recommendations using Google Gemini API. The app integrates Inngest for background job handling and provides a modern, responsive UI designed with Shadcn UI components.",
+            "Sens-AI is a full-stack AI-powered career coaching platform built with Next.js, Prisma, Neon DB, Tailwind CSS, and Clerk authentication. It helps users explore industry insights, track career growth, and get AI-generated recommendations using Google Gemini API. The app integrates Inngest for background job handling and provides a modern, responsive UI designed with Shadcn UI components.",
           Features: [
             "Users can sign up, sign in, and complete onboarding securely through Clerk, with role-based access to features.",
             "Provides personalized career recommendations and industry-specific insights using Gemini AI integration.",
@@ -182,7 +209,7 @@ export default function FullWidthTabs() {
             "Built on Next.js with modular structure, supporting server-side rendering and API routes for high performance and maintainability.",
           ],
 
-          Title: "Yash AI - Career Coach",
+          Title: "Sens AI - Career Coach",
           TechStack: [
             "Next.js",
             "Tailwind CSS",
