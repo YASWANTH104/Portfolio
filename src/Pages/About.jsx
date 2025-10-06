@@ -244,7 +244,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-         MERN stack Developer with a passion for full-stack web apps.
+         Software Developer with a passion for full-stack, AI Applications.
         Hackathon winner with a knack for rapid problem-solving.
         Fast learner who adapts quickly to new technologies.
         Driven by curiosity, creativity, and clean code.

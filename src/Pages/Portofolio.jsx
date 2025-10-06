@@ -253,6 +253,33 @@ export default function FullWidthTabs() {
           ],
         },
         {
+          id: "Log Classification System",
+          TechStack: [
+            "Python",
+            "FastAPI",
+            "uvicorn",
+            "Sentence Transformers ",
+            "scikit-learn",
+            "LLMs",
+          ],
+          Github: "https://github.com/YASWANTH104/Log-Classification-System",
+          Description:
+            "Developed a hybrid log classification system combining Regex, Sentence Transformers, Logistic Regression, and LLMs to efficiently process and categorize complex log data. The solution was deployed using FastAPI, enabling real-time log processing and smooth integration with existing enterprise systems through RESTful APIs.",
+          Title: "Log Classification System",
+          Link: "https://github.com/YASWANTH104/Log-Classification-System",
+          Features: [
+            "Combines Regex, Sentence Transformers, DBSCAN, Logistic Regression, and LLMs (e.g., BERT/DeepSeek-R1) for handling logs with varying levels of complexity.",
+            "Automatically classifies system logs into relevant categories (e.g., error, warning, info) with minimal manual intervention.",
+            "Built and deployed a FastAPI server to expose RESTful APIs for real-time log processing and easy integration with existing systems.",
+            "Utilizes Regex and transformer-based embeddings for detecting both structured and unstructured log patterns.",
+            "Easily extendable for new log formats or models without major codebase changes.",
+            "Improved log classification accuracy by 40% compared to traditional rule-based systems",
+            "Reduced operational costs by 30% by automating log analysis and minimizing manual intervention.",
+            "Leveraged a hybrid AI architecture for handling varying log complexities with higher robustness and interpretability."
+          ],
+          Img: "/log_classification_system.png",
+        },
+        {
           id: "NxtTrendz",
           TechStack: [
             "ReactJS",

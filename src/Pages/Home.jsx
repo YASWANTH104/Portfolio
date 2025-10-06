@@ -185,7 +185,7 @@ const Home = () => {
                 <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
                   data-aos="fade-up"
                   data-aos-delay="1000">
-                      I'm a MERN Stack Developer passionate about building impactful web applications.
+                      I'm a Software Developer passionate about building impactful web and AI applications.
                </p>
 
                 {/* Tech Stack */}
