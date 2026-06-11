@@ -58,10 +58,9 @@ const ToggleButton = ({ onClick, isShowingMore }) => (
         className={`
           transition-transform 
           duration-300 
-          ${
-            isShowingMore
-              ? "group-hover:-translate-y-0.5"
-              : "group-hover:translate-y-0.5"
+          ${isShowingMore
+            ? "group-hover:-translate-y-0.5"
+            : "group-hover:translate-y-0.5"
           }
         `}
       >
@@ -595,15 +594,15 @@ export default function FullWidthTabs() {
                       index % 3 === 0
                         ? "fade-up-right"
                         : index % 3 === 1
-                        ? "fade-up"
-                        : "fade-up-left"
+                          ? "fade-up"
+                          : "fade-up-left"
                     }
                     data-aos-duration={
                       index % 3 === 0
                         ? "1000"
                         : index % 3 === 1
-                        ? "1200"
-                        : "1000"
+                          ? "1200"
+                          : "1000"
                     }
                   >
                     <CardProject
@@ -637,15 +636,15 @@ export default function FullWidthTabs() {
                       index % 3 === 0
                         ? "fade-up-right"
                         : index % 3 === 1
-                        ? "fade-up"
-                        : "fade-up-left"
+                          ? "fade-up"
+                          : "fade-up-left"
                     }
                     data-aos-duration={
                       index % 3 === 0
                         ? "1000"
                         : index % 3 === 1
-                        ? "1200"
-                        : "1000"
+                          ? "1200"
+                          : "1000"
                     }
                   >
                     <Certificate ImgSertif={certificate.Img} />
@@ -673,15 +672,15 @@ export default function FullWidthTabs() {
                       index % 3 === 0
                         ? "fade-up-right"
                         : index % 3 === 1
-                        ? "fade-up"
-                        : "fade-up-left"
+                          ? "fade-up"
+                          : "fade-up-left"
                     }
                     data-aos-duration={
                       index % 3 === 0
                         ? "1000"
                         : index % 3 === 1
-                        ? "1200"
-                        : "1000"
+                          ? "1200"
+                          : "1000"
                     }
                   >
                     <TechStackIcon

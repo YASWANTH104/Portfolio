@@ -2,6 +2,7 @@ import React, { useEffect, memo, useState } from "react"
 import { FileText, Code, Award, Globe, ArrowUpRight, Sparkles, UserCheck } from "lucide-react"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { experienceData } from "../components/Experience"
 
 // Memoized Components
 const Header = memo(() => (
@@ -68,8 +69,8 @@ const ProfileImage = memo(() => (
   </div>
 ));
 
-const StatCard = memo(({ icon: Icon, color, value, label, description, animation }) => (
-  <div data-aos={animation} data-aos-duration={1300} className="relative group">
+const StatCard = memo(({ icon: Icon, color, value, label, description, animation, onClick }) => (
+  <div data-aos={animation} data-aos-duration={1300} className="relative group cursor-pointer" onClick={onClick}>
     <div className="relative z-10 bg-gray-900/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
       <div className={`absolute -z-10 inset-0 bg-gradient-to-br ${color} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}></div>
       
@@ -124,15 +125,20 @@ const AboutPage = () => {
   const calculateStats = () => {
     const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
     const storedCertificates = JSON.parse(localStorage.getItem("certificates") || "[]");
-    const startDate = new Date("2025-05-01");
+    const expStart = new Date(Math.min(...experienceData.map((e) => e.startDate.getTime())));
     const today = new Date();
-    const experience = today.getFullYear() - startDate.getFullYear() -
-      (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
+    const totalMonths = Math.max(0, Math.round((today - expStart) / (1000 * 60 * 60 * 24 * 30.44)));
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+    let YearExperience;
+    if (years > 0 && months > 0) YearExperience = `${years}y ${months}m`;
+    else if (years > 0) YearExperience = `${years}yr`;
+    else YearExperience = `${months}m`;
 
     return {
       totalProjects: storedProjects.length,
       totalCertificates: storedCertificates.length,
-      YearExperience: experience
+      YearExperience,
     };
   };
 
@@ -169,6 +175,7 @@ const AboutPage = () => {
       label: "Total Projects",
       description: "Innovative web solutions crafted",
       animation: "fade-right",
+      href: "#Portfolio",
     },
     {
       icon: Award,
@@ -177,14 +184,16 @@ const AboutPage = () => {
       label: "Certificates",
       description: "Professional skills validated",
       animation: "fade-up",
+      href: "#Portfolio",
     },
     {
       icon: Globe,
       color: "from-[#6366f1] to-[#a855f7]",
       value: stats.YearExperience,
-      label: "Years of Experience",
-      description: "Continuous learning journey",
+      label: "Total Experience",
+      description: "Building since Jul 2025",
       animation: "fade-left",
+      href: "#Experience",
     },
   ];
 
@@ -275,13 +284,18 @@ const AboutPage = () => {
           <ProfileImage />
         </div>
 
-        <a href="#Portofolio">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 cursor-pointer">
-            {statsData.map((stat) => (
-              <StatCard key={stat.label} {...stat} />
-            ))}
-          </div>
-        </a>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+          {statsData.map((stat) => (
+            <StatCard
+              key={stat.label}
+              {...stat}
+              onClick={() => {
+                const el = document.querySelector(stat.href);
+                if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+            />
+          ))}
+        </div>
       </div>
 
       <style jsx>{`
